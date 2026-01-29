@@ -104,7 +104,7 @@ void LaraBreath(ITEM_INFO* item)
 	PHD_VECTOR p;
 	PHD_VECTOR v;
 
-	if (lara.water_status == LARA_UNDERWATER || lara_item->hit_points < 0)
+	if (lara.water_status == LARA_UNDERWATER || lara_item->hit_points <= 0)
 		return;
 
 	if (lara_item->current_anim_state == AS_STOP)
